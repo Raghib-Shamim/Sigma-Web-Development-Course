@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: rgb(212, 231, 231);
+            color: rgb(211, 73, 73);
+        }
+        /* Uses for Colum and Row */
+        /* .boxes {
+            flex-direction: column;
+        } */
+        @media screen and (orientation: landcape) {
+            body {
+                border: 2px solid purple;
+            }
+        }
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        .boxes {
+            display: flex;
+        }
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: rgb(58, 4, 16);
+            color: rgb(30, 248, 84);
+            box-shadow: inset;
+            box-sizing: content-box;
+            padding: 20px;
+            margin: 20px;
+        }
+        div{
+            background-color: rgb(183, 161, 212);
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        HEY I AM A RAGHIB SHAMIM (SUGGU)
+    </div>
+    <div class="boxes">
+        <div class="box">RAGHIB SHAMIM</div>
+        <div class="box">GALGOTIAS UNIVERSITY</div>
+        <div class="box">SOFTWARE ENGINEER</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            border: 2px solid rgb(8, 8, 8);
+            display: grid;
+            /* height: 50vh; */
+            /* grid-template-columns: 120px 100px;
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-areas: "nav nav nav"
+                "side article article"
+                "footer footer footer";
+                /* gap: 34px; */
+                /* column-gap: 10px;
+                row-gap: 44px; */
+        }
+        .items {
+            border: 2px solid red;
+            height: 100px;
+            /* width: 100px; */
+            /* background-color: rgb(238, 255, 0); */
+            color: rgb(185, 6, 15);
+            align-items: bolder;
+            /* justify-items: center;
+            align-items: center; */
+        }
+
+        .items-1 {
+            grid-area: nav;
+            background-color: blue;
+            color: yellow;
+        }
+        .items-2 {
+            grid-area: side;
+            background-color: rgb(43, 226, 52);
+            color: rgb(112, 12, 12);
+        }
+        .items-3 {
+            grid-area: article;
+            background-color: yellow;
+            color: blue;
+        }
+        .items-4 {
+            grid-area: footer;
+            background-color: rgb(252, 15, 15);
+            color: rgb(227, 239, 241);
+        }
+        .items-5{
+            grid-area: nav;
+            background-color: rgb(7, 10, 10);
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items items-1">RAGHIB SHAMIM (SOFTWARE ENGINEER)</div>
+        <div class="items items-2">RAGHIB SHMAIM</div>
+        <div class="items items-3">RAGHIB SHAMIM</div>
+        <div class="items items-4">RAGHIB SHAMIM</div>
+        <div class="items items-5">RAGHIB SHAMIM (SOFTWARE ENGINEER)</div>
+    </div>
+</body>
+
+</html>

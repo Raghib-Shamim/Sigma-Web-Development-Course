@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Property</title>
+    <style>
+        .container{
+            background-color: red;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: rgb(71, 17, 219);
+            width: 11vw;
+            height: 3vh;
+            /* transition-property: background-color, tansform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.42, 0, 0.2, 0.55);
+            transition-delay: 1s; */
+            transition: all 3s cubic-bezier(0.01, 0.82, 0.04, 0.91) 1s;
+            border-radius: 7px;
+            
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: rgb(240, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">RAGHIB</div>
+    </div>
+</body>
+</html>

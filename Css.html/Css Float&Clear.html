@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: right ;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear:both;
+        }
+        .card:nth-child(4){
+            background-color: yellow;
+        }
+        .card:nth-child(2){
+            background-color: red;
+        }
+        .card:nth-child(5){
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="sea-164989_1280.jpg" alt="" width="300">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sint magni rerum commodi impedit quasi modi dolorem possimus quod et in provident illo, neque mollitia aut culpa illum. Necessitatibus ratione sapiente, praesentium assumenda ex vitae.</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit natus suscipit esse obcaecati facilis dolorem molestias consectetur consequatur. Eaque aliquid deserunt nemo magni. Officia porro exercitationem, ipsa provident vel, nam neque reprehenderit, dolore iste placeat ducimus dignissimos maxime dicta nesciunt sit! Repudiandae non nostrum earum fuga consequatur quidem totam.</p>
+        </div>
+        <div class="card">
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis modi beatae ratione ullam laboriosam hic perspiciatis, labore accusamus, nam placeat magnam quidem nihil officia suscipit molestiae. Esse temporibus error sint asperiores a velit quis, necessitatibus blanditiis quos reiciendis id cum.</P>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorum eveniet aliquam doloribus at! Officia quaerat error autem veniam, maxime adipisci dolor tempora numquam inventore quis. Exercitationem nisi nulla pariatur hic excepturi molestiae, vel minima consequatur! Repellendus nesciunt natus iusto harum animi eum atque. Atque consequuntur aperiam nisi expedita fugiat!</p>
+        </div>
+    </div>
+</body>
+</html>

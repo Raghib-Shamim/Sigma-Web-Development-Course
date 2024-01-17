@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+.container{
+    border: 2px solid rgb(0, 225, 255);
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(47, 16, 121);
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* There is no justify-items in flexbox */
+    flex-flow: row wrap;
+    /* row-gap: 40px;
+    column-gap: 10px; */
+    gap: 40px 10px;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    /* margin: 4px; */
+    background-color: rgb(255, 0, 191);
+    
+}
+/* .item1{ 
+        flex-grow: 2;
+    } */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+            <div class="item">RAGHIB</div>
+        </div>
+    </main>
+</body>
+</html>
